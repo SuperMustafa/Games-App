@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+<!-- fonts -->
+
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+  <div class="master position-relative">
+    <div class="parent" id="parent">
+      <div class="background-image">
+      </div>
+      <!--=============================== navbar================================= -->
+      
+      <div class="container d-flex justify-content-center">
+          <nav class="navbar navbar-expand-lg nav-color w-100 p-3 rounded-4 ">
+      
+              <div class="site-logo d-flex align-items-center ">
+                  <img src="images/logo-sm.png" alt="site-image">
+                  <h1 class="h5">GAME REVIEWS</h1>
+                 </div>
+      
+      
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+      
+                <div class="collapse navbar-collapse position-relative" id="navbarTogglerDemo02">
+                  <div class="anchor-list">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 "> 
+                      <li class="nav-item">
+                          <a class="nav-link active text-white  " aria-current="page" data-category="mmorpg" href="#">MMORPG</a>
+                        </li>
+                        <li class="nav-item">
+                          <a  class="nav-link  text-white" aria-current="page" data-category="shooter" href="#">SHOOTER</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link  text-white" aria-current="page" data-category="sailing" href="#">SAILING</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link  text-white" aria-current="page" data-category="permadeath" href="#">PERMADEATH</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link  text-white" aria-current="page" data-category="superhero" href="#">SUPERHERO</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link  text-white" aria-current="page" data-category="pixel" href="#">PIXEL</a>
+                        </li>
+                     
+                  </ul>
+                  </div>
+                  
+                 
+                </div>
+             
+            </nav>
+      <!--=============================== navbar================================= -->
+      
+      
+      </div>
+      
+      <div class="container my-5 ">
+        <div  class="row gy-3" id="rowData">
+         
+             
+          </div>
+       
+        </div>
+  
+        <div class="loading-layer d-none">
+          <span class="loader"></span>
+        </div>
+    </div>
+
+
+      <div class=" details bg-dark position-fixed top-0 start-0 end-0 bottom-0 py-3 d-none" id="details">
+        <div class="container position-relative">
+
+          <div class="gar d-flex justify-content-between">
+            <div class="base-heading">
+              <h3>Details Game</h3>
+            </div>
+            
+            <div class="exit">
+            <i class="fa-solid fa-xmark text-secondary fa-2xl" id="closeBtn"></i>
+            </div>
+          </div>
+          <div class="row" id="row">
+           
+         
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+</html> 

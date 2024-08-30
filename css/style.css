@@ -1,0 +1,152 @@
+body {
+    font-family: "Comfortaa", sans-serif;
+    background-color: var(--site-main-color);
+
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0 !important;
+    margin: 0 !important;
+    color: white !important;
+}
+
+
+:root {
+    --nav-color: #3A497B;
+    --site-main-color: #272B30;
+    --badge-background: #32383E;
+}
+
+.nav-color {
+    background-color: var(--nav-color);
+}
+
+.site-main-color {
+    background-color: var(--site-main-color);
+}
+
+.badge-color {
+    background-color: var(--badge-background);
+}
+
+.background-image {
+    background-image: linear-gradient(rgba(50, 50, 50, 0.929), rgba(50, 50, 50, 0.929)), url(../images/top100games-2021-blogroll-1671593544336.jpg);
+    background-size: contain;
+    height: 200px;
+    position: relative;
+
+}
+
+/* =================================navbar======================== */
+
+
+/*================================= display========================= */
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    position: relative;
+    bottom: 5%;
+}
+
+.card {
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.card .layer {
+    background-image: linear-gradient(black, rgba(255, 255, 255, 0));
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.5s;
+
+}
+
+.card:hover .layer {
+    opacity: 0;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/*================================= display========================= */
+
+.site-logo img {
+    width: 40px;
+    margin: 0 4px;
+}
+
+li .nav-link {
+    font-size: 10px;
+}
+
+.anchor-list {
+    position: absolute;
+    right: 0;
+}
+
+.active {
+    color: #0394C7 !important;
+}
+
+@media(max-width:992px) {
+    .anchor-list {
+        position: static;
+    }
+}
+
+
+/* =================================navbar======================== */
+.loading-layer {
+    position: fixed;
+    inset: 0;
+    background-color: #272b30e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    width: 60px;
+    height: 60px;
+    border: 5px solid;
+    border-color: #FF3D00 transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+   
+
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* =================details page================ */
+.details button:hover{
+    background-color: rgb(252, 185, 60);
+}
+.exit i{
+ cursor: pointer;       
+}
+/* =================details page================ */
